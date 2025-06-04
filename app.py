@@ -12,7 +12,7 @@ def api():
             data = json.load(file)
         return jsonify(data)
     except FileNotFoundError:
-        return jsonify({"error": "Data file not found"}), 404
+        return jsonify({"error": "File not found"}), 404
 
 
 if __name__ == '__main__':
