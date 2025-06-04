@@ -8,11 +8,8 @@ app = Flask(__name__)
 @app.route('/api', methods=['GET'])
 def api():
     try:
-        with open('data.json', 'r') as file:
-            data = json.load(file)
-        return jsonify(data)
-    except FileNotFoundError:
-        return jsonify({"error": "File not found"}), 404
+        return jsonify({"error": "File not found"}), 404i
+    #made may changes
 
 
 if __name__ == '__main__':
