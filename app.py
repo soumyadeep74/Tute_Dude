@@ -23,7 +23,7 @@ def submit_todo():
             'description': item_desc
         })
         return "Item added successfully!"
-    return "Missing item name or description", 400
+    return "Missing item name or description required fields", 400
 
 if __name__ == '__main__':
     app.run(debug=True)
